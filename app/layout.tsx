@@ -29,6 +29,78 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            #dify-chatbot-bubble-button {
+              background-color: #1C64F2 !important;
+            }
+            #dify-chatbot-bubble-window {
+              width: 24rem !important;
+              height: 40rem !important;
+            }
+          `
+        }} />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.difyChatbotConfig = {
+              token: 'XyrDFWfBaDf7gvM9',
+              baseUrl: 'http://dify.deskterior.ai',
+              systemVariables: {},
+              userVariables: {},
+            }
+          `
+        }} />
+        <script src="http://dify.deskterior.ai/embed.min.js" id="XyrDFWfBaDf7gvM9" defer></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            // 테스트용 챗봇 버튼 (외부 스크립트가 로드되지 않을 경우 대안)
+            document.addEventListener('DOMContentLoaded', function() {
+              setTimeout(function() {
+                if (!document.getElementById('dify-chatbot-bubble-button')) {
+                  console.log('Dify 챗봇이 로드되지 않았습니다. 테스트 버튼을 생성합니다.');
+                  
+                  const testButton = document.createElement('div');
+                  testButton.id = 'test-chatbot-button';
+                  testButton.innerHTML = '💬';
+                  testButton.style.cssText = \`
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: #1C64F2;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 24px;
+                    cursor: pointer;
+                    z-index: 9999;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    transition: all 0.3s ease;
+                  \`;
+                  
+                  testButton.addEventListener('click', function() {
+                    alert('챗봇 기능을 준비 중입니다. 곧 이용하실 수 있습니다!');
+                  });
+                  
+                  testButton.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1)';
+                  });
+                  
+                  testButton.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                  });
+                  
+                  document.body.appendChild(testButton);
+                }
+              }, 3000);
+            });
+          `
+        }} />
+      </head>
       <body
         className={`${karla.variable} ${pacifico.variable} antialiased font-karla`}
       >

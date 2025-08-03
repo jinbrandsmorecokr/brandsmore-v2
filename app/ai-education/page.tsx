@@ -153,10 +153,10 @@ export default function AIEducationPage() {
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-6 leading-tight">
                 대한민국 상장기업 
-                <span className="font-normal"> CEO를 위한 AI 리더십</span>
+                <span className="font-normal"> C-레벨을 위한 AI 리더십</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed">
-                KOSPI & KOSDAQ 2,600여 상장기업 최고경영진을 위한 1:1 맞춤형 AI 전략 교육. 6주간 주 2회(2시간씩) 유연한 스케줄로 진행되는 프리미엄 임원 교육 프로그램입니다.
+                KOSPI & KOSDAQ 2,600여 상장기업 최고경영진을 위한 1:1 맞춤형 AI 전략 교육. 총 6주간 12회 교육중 라이브 온라인교육 10회, 오프라인 교육 2회를 진행하는 프리미엄 임원 교육 프로그램입니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -341,7 +341,7 @@ export default function AIEducationPage() {
             <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">AI 리더십의 시작</h2>
               <p className="text-gray-600 font-light mb-8 max-w-2xl mx-auto">
-                대한민국을 대표하는 상장기업 CEO로서 AI 혁신을 이끌어갈 준비가 되셨나요? 지금 바로 맞춤형 상담을 신청해보세요.
+                대한민국을 대표하는 상장기업 C-레벨로서 AI 혁신을 이끌어갈 준비가 되셨나요? 지금 바로 맞춤형 상담을 신청해보세요.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 

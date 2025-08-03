@@ -10,11 +10,11 @@ export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
-    { id: 'all', name: 'All Posts', count: 24 },
-    { id: 'ai-insights', name: 'AI Insights', count: 8 },
-    { id: 'technology', name: 'Technology', count: 6 },
-    { id: 'healthcare', name: 'Healthcare', count: 5 },
-    { id: 'education', name: 'Education', count: 5 }
+    { id: 'all', name: '전체 글', count: 24 },
+    { id: 'ai-insights', name: 'AI 인사이트', count: 8 },
+    { id: 'technology', name: '기술', count: 6 },
+    { id: 'healthcare', name: '헬스케어', count: 5 },
+    { id: 'education', name: '교육', count: 5 }
   ];
 
   const featuredPost = {
@@ -124,11 +124,11 @@ export default function BlogPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-4">
-              AI Insights & 
-              <span className="font-normal"> Innovation</span>
+              AI 인사이트 & 
+              <span className="font-normal"> 혁신</span>
             </h1>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Stay updated with the latest trends, insights, and breakthroughs in artificial intelligence and technology.
+              인공지능과 기술 분야의 최신 트렌드, 인사이트, 혁신적인 발전 소식을 확인하세요.
             </p>
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function BlogPage() {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <div className="mb-8">
-              <h2 className="text-2xl font-light text-gray-800 mb-4">Featured Article</h2>
+              <h2 className="text-2xl font-light text-gray-800 mb-4">추천 글</h2>
             </div>
             <div className="bg-gray-100 rounded-3xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] overflow-hidden hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -193,7 +193,7 @@ export default function BlogPage() {
                     href={`/blog/${featuredPost.id}`}
                     className="bg-gray-100 text-gray-700 px-6 py-3 rounded-2xl shadow-[2px_2px_4px_rgba(0,0,0,0.1),-2px_-2px_4px_rgba(255,255,255,0.8)] hover:shadow-[inset_1px_1px_2px_rgba(0,0,0,0.1),inset_-1px_-1px_2px_rgba(255,255,255,0.8)] active:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300 font-normal whitespace-nowrap cursor-pointer inline-block"
                   >
-                    Read Full Article
+                    전체 글 읽기
                   </Link>
                 </div>
               </div>
@@ -206,7 +206,7 @@ export default function BlogPage() {
           <div className="container mx-auto px-6">
             <div className="mb-8">
               <h2 className="text-2xl font-light text-gray-800 mb-4">
-                {selectedCategory === 'all' ? 'Latest Articles' : `${categories.find(c => c.id === selectedCategory)?.name} Articles`}
+                {selectedCategory === 'all' ? '최신 글' : `${categories.find(c => c.id === selectedCategory)?.name} 글`}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -243,7 +243,7 @@ export default function BlogPage() {
                       href={`/blog/${post.id}`}
                       className="text-gray-700 text-sm font-normal hover:text-gray-800 transition-colors duration-300"
                     >
-                      Read More →
+                      더 읽기 →
                     </Link>
                   </div>
                 </article>
@@ -256,22 +256,22 @@ export default function BlogPage() {
         <section className="py-20">
           <div className="container mx-auto px-6 text-center">
             <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-12">
-              <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">Stay Updated</h2>
+              <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">최신 소식 받기</h2>
               <p className="text-gray-600 font-light mb-8 max-w-2xl mx-auto">
-                Subscribe to our newsletter and get the latest AI insights, technology trends, and innovation updates delivered to your inbox.
+                뉴스레터를 구독하고 최신 AI 인사이트, 기술 트렌드, 혁신 업데이트를 이메일로 받아보세요.
               </p>
               <form className="max-w-md mx-auto">
                 <div className="flex flex-col sm:flex-row gap-4">
                   <input 
                     type="email" 
-                    placeholder="Enter your email"
+                    placeholder="이메일을 입력하세요"
                     className="flex-1 bg-gray-100 text-gray-700 px-4 py-3 rounded-2xl shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] focus:outline-none focus:shadow-[inset_3px_3px_6px_rgba(0,0,0,0.1),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] transition-all duration-300 font-light"
                   />
                   <button 
                     type="submit"
                     className="bg-gray-100 text-gray-700 px-6 py-3 rounded-2xl shadow-[2px_2px_4px_rgba(0,0,0,0.1),-2px_-2px_4px_rgba(255,255,255,0.8)] hover:shadow-[inset_1px_1px_2px_rgba(0,0,0,0.1),inset_-1px_-1px_2px_rgba(255,255,255,0.8)] active:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300 font-normal whitespace-nowrap cursor-pointer"
                   >
-                    Subscribe
+                    구독하기
                   </button>
                 </div>
               </form>

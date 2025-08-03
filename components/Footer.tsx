@@ -12,12 +12,12 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-['Pacifico'] text-gray-800 mb-4">Brandsmore</h3>
               <p className="text-gray-600 text-sm leading-relaxed font-light">
-                Data-driven personalized innovation, creating the future with Brandsmore AI.
+                데이터 기반 개인화 혁신으로 Brandsmore AI와 함께 미래를 창조합니다.
               </p>
             </div>
             
             <div>
-              <h4 className="text-gray-800 font-normal mb-4 text-sm">Services</h4>
+              <h4 className="text-gray-800 font-normal mb-4 text-sm">서비스</h4>
               <div className="space-y-3">
                 {['AI RAG', 'AI Education', 'AI K-Medical'].map((item, index) => {
                   const links = ['/rag-solution', '/ai-education', '/k-medical'];
@@ -35,9 +35,9 @@ export default function Footer() {
             </div>
             
             <div>
-              <h4 className="text-gray-800 font-normal mb-4 text-sm">Company</h4>
+              <h4 className="text-gray-800 font-normal mb-4 text-sm">회사</h4>
               <div className="space-y-3">
-                {['About', 'Blog', 'Contact'].map((item, index) => {
+                {['회사소개', '블로그', '문의하기'].map((item, index) => {
                   const links = ['/about', '/blog', '/contact'];
                   return (
                     <Link 
@@ -53,12 +53,12 @@ export default function Footer() {
             </div>
             
             <div>
-              <h4 className="text-gray-800 font-normal mb-4 text-sm">Contact</h4>
+              <h4 className="text-gray-800 font-normal mb-4 text-sm">연락처</h4>
               <div className="text-gray-600 text-sm space-y-2 font-light">
                 <div className="bg-gray-100 rounded-lg shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] p-3">
-                  <p>Seoul, Gangnam-gu</p>
-                  <p>contact@brandsmore.ai</p>
-                  <p>+82-2-1234-5678</p>
+                  <p>경기도 군포시 군포첨단산업2로22번길 5(부곡동) 5층 501호</p>
+                  <p>jin@brandsmore.co.kr</p>
+                  <p>010-8373-3720</p>
                 </div>
               </div>
             </div>

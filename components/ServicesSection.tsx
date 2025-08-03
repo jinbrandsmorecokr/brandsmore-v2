@@ -8,22 +8,22 @@ export default function ServicesSection() {
     {
       icon: 'ri-brain-line',
       title: 'AI RAG',
-      description: 'Build customized knowledge assistants for enterprises, providing intelligent chatbots and compliance Q&A systems using internal data.',
-      features: ['Custom Knowledge Base', 'FAQ Chatbot', 'Compliance Support'],
+      description: '기업 내부 데이터를 활용한 맞춤형 지식 어시스턴트 구축, 지능형 챗봇 및 컴플라이언스 Q&A 시스템을 제공합니다.',
+      features: ['맞춤형 지식베이스', 'FAQ 챗봇', '컴플라이언스 지원'],
       link: '/rag-solution'
     },
     {
       icon: 'ri-graduation-cap-line',
-      title: 'AI Education',
-      description: 'Exclusive AI practical training for executives of listed companies and large corporations, learning enterprise-wide AI utilization strategies through the latest generative AI and RAG architecture practices.',
-      features: ['C-Level Custom Training', 'Practical Case Studies', 'AI Strategy Roadmap'],
+      title: 'AI 교육',
+      description: '상장기업 및 대기업 임원진을 위한 독점적 AI 실무 교육, 최신 생성형 AI와 RAG 아키텍처 실습을 통한 기업 전반의 AI 활용 전략을 학습합니다.',
+      features: ['C-레벨 맞춤 교육', '실무 사례 연구', 'AI 전략 로드맵'],
       link: '/ai-education'
     },
     {
       icon: 'ri-health-book-line',
-      title: 'AI K-Medical',
-      description: 'AI matching service for Korea\'s top-tier beauty and medical services for global customers, providing 24-hour multilingual consultation and reservation services.',
-      features: ['AI Hospital Matching', 'Multilingual Consultation', 'Integrated Booking'],
+      title: 'AI K-메디컬',
+      description: '글로벌 고객을 위한 한국 최고급 뷰티 및 의료 서비스 AI 매칭 서비스, 24시간 다국어 상담 및 예약 서비스를 제공합니다.',
+      features: ['AI 병원 매칭', '다국어 상담', '통합 예약'],
       link: '/k-medical'
     }
   ];
@@ -34,10 +34,10 @@ export default function ServicesSection() {
         <div className="text-center mb-16">
           <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-8 inline-block">
             <h2 className="text-2xl md:text-3xl font-light text-gray-800 mb-3">
-              Core Services
+              핵심 서비스
             </h2>
             <p className="text-sm text-gray-600 max-w-2xl mx-auto font-light">
-              Discover new possibilities for your business through AI innovation
+              AI 혁신을 통해 비즈니스의 새로운 가능성을 발견하세요
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function ServicesSection() {
                     href={service.link}
                     className="inline-flex items-center text-gray-700 text-sm font-normal group-hover:text-gray-900 transition-colors duration-300 whitespace-nowrap cursor-pointer px-6 py-3 bg-gray-100 rounded-xl shadow-[2px_2px_4px_rgba(0,0,0,0.1),-2px_-2px_4px_rgba(255,255,255,0.8)] hover:shadow-[inset_1px_1px_2px_rgba(0,0,0,0.1),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"
                   >
-                    Learn More
+                    자세히 보기
                     <i className="ri-arrow-right-line ml-2 text-sm group-hover:translate-x-1 transition-transform duration-300"></i>
                   </Link>
                 </div>

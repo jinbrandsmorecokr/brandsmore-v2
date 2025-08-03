@@ -5,22 +5,22 @@ export default function StatsSection() {
   const stats = [
     {
       number: '500+',
-      label: 'Global Medical Partners',
+      label: '글로벌 의료 파트너',
       icon: 'ri-hospital-line'
     },
     {
       number: '95%',
-      label: 'Customer Satisfaction',
+      label: '고객 만족도',
       icon: 'ri-star-line'
     },
     {
       number: '50+',
-      label: 'Enterprise RAG Built',
+      label: '기업 RAG 구축',
       icon: 'ri-building-line'
     },
     {
       number: '1000+',
-      label: 'Executive Training Completed',
+      label: '임원 교육 완료',
       icon: 'ri-user-line'
     }
   ];

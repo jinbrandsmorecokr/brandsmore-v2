@@ -19,7 +19,7 @@ export default function Header() {
           </Link>
           
           <nav className="hidden md:flex items-center space-x-2">
-            {['About', 'AI RAG', 'AI Education', 'AI K-Medical', 'Blog', 'Contact'].map((item, index) => {
+            {['회사소개', 'AI RAG', 'AI 교육', 'AI K-메디컬', '블로그', '문의하기'].map((item, index) => {
               const links = ['/about', '/rag-solution', '/ai-education', '/k-medical', '/blog', '/contact'];
               return (
                 <Link 
@@ -44,7 +44,7 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-gray-100 rounded-2xl shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] p-4">
             <nav className="flex flex-col space-y-2">
-              {['About', 'AI RAG', 'AI Education', 'AI K-Medical', 'Blog', 'Contact'].map((item, index) => {
+              {['회사소개', 'AI RAG', 'AI 교육', 'AI K-메디컬', '블로그', '문의하기'].map((item, index) => {
                 const links = ['/about', '/rag-solution', '/ai-education', '/k-medical', '/blog', '/contact'];
                 return (
                   <Link 
