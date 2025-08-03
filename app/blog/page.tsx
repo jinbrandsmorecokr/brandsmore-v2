@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -163,9 +164,11 @@ export default function BlogPage() {
             <div className="bg-gray-100 rounded-3xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] overflow-hidden hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="h-64 lg:h-auto bg-gray-100 shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)]">
-                  <img 
+                  <Image 
                     src={featuredPost.image}
                     alt={featuredPost.title}
+                    width={800}
+                    height={400}
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -213,9 +216,11 @@ export default function BlogPage() {
               {filteredPosts.map((post) => (
                 <article key={post.id} className="bg-gray-100 rounded-2xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] overflow-hidden hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
                   <div className="h-48 bg-gray-100 shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)]">
-                    <img 
+                    <Image 
                       src={post.image}
                       alt={post.title}
+                      width={400}
+                      height={250}
                       className="w-full h-full object-cover object-top"
                     />
                   </div>

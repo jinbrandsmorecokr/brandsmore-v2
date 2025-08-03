@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function AboutPage() {
   const teamMembers = [
@@ -75,7 +76,9 @@ export default function AboutPage() {
                 <span className="font-normal">혁신을 현실로</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed">
+<<<<<<< Updated upstream
                 브랜즈모어(Brandsmore)는 "누구나 쉽게, 실제 업무에 바로 쓸 수 있는 AI"를 만들겠다는 목표 아래, 현장 중심의 RAG 기반 지식검색 시스템과 개인 맞춤형 추천 플랫폼을 자체 개발·상용화하고 있습니다.
+>>>>>>> Stashed changes
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -109,17 +112,21 @@ export default function AboutPage() {
                     최근에는 로컬 LLM과 벡터DB를 활용한 엔터프라이즈 RAG 솔루션, 상장기업 임원 대상 1:1 AI 실전 교육 프로그램, AI에이전트 기반 K-Medical 서비스 개발 등, 기술력과 시장의 수요가 만나는 새로운 비즈니스도 확장하고 있습니다.
                   </p>
                   <p>
+<<<<<<< Updated upstream
                     브랜즈모어는 벤처기업 인증, 기술보증기금 IP기술보증 등 공식 인증과 실제 고객사 PoC/현장 적용 경험을 바탕으로, "실제로 쓰이는 AI, 문제 해결에 집중하는 AI"를 추구합니다.
                   </p>
                   <p>
                     앞으로도 브랜즈모어는 <strong>'실전형 AI 파트너'</strong>로, 혁신을 현실로 만들어가겠습니다.
+>>>>>>> Stashed changes
                   </p>
                 </div>
               </div>
               <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-8">
-                <img 
+                <Image 
                   src="https://readdy.ai/api/search-image?query=Modern%20AI%20research%20team%20working%20together%20in%20bright%20office%20space%2C%20diverse%20professionals%20collaborating%20on%20computer%20screens%2C%20clean%20minimal%20workspace%2C%20natural%20lighting%2C%20professional%20corporate%20setting&width=600&height=400&seq=about_story_1&orientation=landscape"
                   alt="Our team working together"
+                  width={600}
+                  height={400}
                   className="w-full h-64 object-cover object-top rounded-2xl shadow-[2px_2px_4px_rgba(0,0,0,0.1),-2px_-2px_4px_rgba(255,255,255,0.8)]"
                 />
               </div>
@@ -164,9 +171,11 @@ export default function AboutPage() {
                 <div key={index} className="text-center">
                   <div className="bg-gray-100 rounded-3xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] p-6 hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
                     <div className="w-24 h-24 mx-auto mb-4 bg-gray-100 rounded-full shadow-[inset_3px_3px_6px_rgba(0,0,0,0.1),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] overflow-hidden">
-                      <img 
+                      <Image 
                         src={member.image}
                         alt={member.name}
+                        width={300}
+                        height={300}
                         className="w-full h-full object-cover object-top"
                       />
                     </div>

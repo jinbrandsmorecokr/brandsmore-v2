@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function RAGSolutionPage() {
   const [activeDemo, setActiveDemo] = useState(0);
@@ -94,8 +95,10 @@ export default function RAGSolutionPage() {
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-6 leading-tight">
+<<<<<<< Updated upstream
                 조직의 지식을 AI RAG 솔루션으로 
                 <span className="font-normal">활용하세요</span>
+>>>>>>> Stashed changes
               </h1>
               <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed">
                 검색 증강 생성 플랫폼으로 팀이 정보에 접근하고 활용하는 방식을 혁신하세요. 문서, 데이터베이스, 지식 저장소에서 즉시 정확한 답변을 얻으세요.
@@ -166,9 +169,11 @@ export default function RAGSolutionPage() {
                 </div>
               </div>
               <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-8">
-                <img 
+                <Image 
                   src={features[activeDemo].image}
                   alt={features[activeDemo].title}
+                  width={500}
+                  height={300}
                   className="w-full h-64 object-cover object-top rounded-2xl shadow-[2px_2px_4px_rgba(0,0,0,0.1),-2px_-2px_4px_rgba(255,255,255,0.8)]"
                 />
               </div>
@@ -235,7 +240,9 @@ export default function RAGSolutionPage() {
             <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">지식 관리를 혁신하세요</h2>
               <p className="text-gray-600 font-light mb-8 max-w-2xl mx-auto">
+<<<<<<< Updated upstream
                 조직 정보의 잠재력을 완전히 활용할 준비가 되셨나요? 지금 AI RAG 여정을 시작하세요.
+>>>>>>> Stashed changes
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 

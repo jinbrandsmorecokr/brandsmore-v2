@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function AIEducationPage() {
   const [activeProgram, setActiveProgram] = useState(0);
@@ -234,9 +235,11 @@ export default function AIEducationPage() {
                 </div>
               </div>
               <div className="bg-gray-100 rounded-3xl shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-8">
-                <img 
+                <Image 
                   src={programs[activeProgram].image}
                   alt={programs[activeProgram].title}
+                  width={500}
+                  height={300}
                   className="w-full h-64 object-cover object-top rounded-2xl shadow-[2px_2px_4px_rgba(0,0,0,0.1),-2px_-2px_4px_rgba(255,255,255,0.8)]"
                 />
               </div>
@@ -316,9 +319,11 @@ export default function AIEducationPage() {
                 <div key={index} className="bg-gray-100 rounded-2xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] p-6 hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-gray-100 rounded-full shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] overflow-hidden mr-4">
-                      <img 
+                      <Image 
                         src={testimonial.image}
                         alt={testimonial.name}
+                        width={300}
+                        height={300}
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
