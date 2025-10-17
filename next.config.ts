@@ -1,12 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
   images: {
     unoptimized: true,
   },
   typescript: {
     // ignoreBuildErrors: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/dify-api/:path*',
+        destination: 'http://dify.deskterior.ai/:path*',
+      },
+    ];
   },
 };
 

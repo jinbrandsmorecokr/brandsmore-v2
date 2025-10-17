@@ -43,12 +43,9 @@ export default function RootLayout({
         }} />
         <script dangerouslySetInnerHTML={{
           __html: `
-            window.difyChatbotConfig = {
-              token: 'XyrDFWfBaDf7gvM9',
-              baseUrl: 'http://dify.deskterior.ai',
-              systemVariables: {},
-              userVariables: {},
-            }
+                          window.difyChatbotConfig = {
+                token: 'XyrDFWfBaDf7gvM9',
+                baseUrl: '/dify-api',
           `
         }} />
         <script src="http://dify.deskterior.ai/embed.min.js" id="XyrDFWfBaDf7gvM9" defer></script>

@@ -213,10 +213,8 @@ export default function ContactPage() {
 
                   {submitStatus === 'success' && (
                     <div className="text-center p-4 bg-gray-100 rounded-xl shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)]">
-<<<<<<< Updated upstream
                       <p className="text-gray-700 font-normal">감사합니다! 메시지가 성공적으로 전송되었습니다.</p>
                       <p className="text-gray-600 text-sm font-light mt-1">24시간 이내에 답변드리겠습니다.</p>
->>>>>>> Stashed changes
                     </div>
                   )}
                 </form>
@@ -272,9 +270,7 @@ export default function ContactPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">우리 팀을 만나보세요</h2>
               <p className="text-gray-600 font-light max-w-2xl mx-auto">
-<<<<<<< Updated upstream
                 Brandsmore의 혁신적인 AI 솔루션을 만드는 전문가들을 소개합니다.
->>>>>>> Stashed changes
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -309,9 +305,7 @@ export default function ContactPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">사무실 방문</h2>
               <p className="text-gray-600 font-light">
-<<<<<<< Updated upstream
                 경기도 군포시 첨단산업단지에 위치
->>>>>>> Stashed changes
               </p>
             </div>
             <div className="bg-gray-100 rounded-3xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] overflow-hidden">

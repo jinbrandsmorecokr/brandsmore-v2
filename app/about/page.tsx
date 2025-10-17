@@ -76,9 +76,7 @@ export default function AboutPage() {
                 <span className="font-normal">혁신을 현실로</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed">
-<<<<<<< Updated upstream
-                브랜즈모어(Brandsmore)는 "누구나 쉽게, 실제 업무에 바로 쓸 수 있는 AI"를 만들겠다는 목표 아래, 현장 중심의 RAG 기반 지식검색 시스템과 개인 맞춤형 추천 플랫폼을 자체 개발·상용화하고 있습니다.
->>>>>>> Stashed changes
+                브랜즈모어(Brandsmore)는 &quot;누구나 쉽게, 실제 업무에 바로 쓸 수 있는 AI&quot;를 만들겠다는 목표 아래, 현장 중심의 RAG 기반 지식검색 시스템과 개인 맞춤형 추천 플랫폼을 자체 개발·상용화하고 있습니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -112,12 +110,10 @@ export default function AboutPage() {
                     최근에는 로컬 LLM과 벡터DB를 활용한 엔터프라이즈 RAG 솔루션, 상장기업 임원 대상 1:1 AI 실전 교육 프로그램, AI에이전트 기반 K-Medical 서비스 개발 등, 기술력과 시장의 수요가 만나는 새로운 비즈니스도 확장하고 있습니다.
                   </p>
                   <p>
-<<<<<<< Updated upstream
-                    브랜즈모어는 벤처기업 인증, 기술보증기금 IP기술보증 등 공식 인증과 실제 고객사 PoC/현장 적용 경험을 바탕으로, "실제로 쓰이는 AI, 문제 해결에 집중하는 AI"를 추구합니다.
+                    브랜즈모어는 벤처기업 인증, 기술보증기금 IP기술보증 등 공식 인증과 실제 고객사 PoC/현장 적용 경험을 바탕으로, &quot;실제로 쓰이는 AI, 문제 해결에 집중하는 AI&quot;를 추구합니다.
                   </p>
                   <p>
-                    앞으로도 브랜즈모어는 <strong>'실전형 AI 파트너'</strong>로, 혁신을 현실로 만들어가겠습니다.
->>>>>>> Stashed changes
+                    앞으로도 브랜즈모어는 <strong>&apos;실전형 AI 파트너&apos;</strong>로, 혁신을 현실로 만들어가겠습니다.
                   </p>
                 </div>
               </div>
