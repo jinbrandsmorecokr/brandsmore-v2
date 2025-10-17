@@ -20,11 +20,11 @@ export default function ServicesSection() {
       link: '/ai-education'
     },
     {
-      icon: 'ri-health-book-line',
-      title: 'AI K-메디컬',
-      description: '글로벌 고객을 위한 한국 최고급 뷰티 및 의료 서비스 AI 매칭 서비스, 24시간 다국어 상담 및 예약 서비스를 제공합니다.',
-      features: ['AI 병원 매칭', '다국어 상담', '통합 예약'],
-      link: '/k-medical'
+      icon: 'ri-user-add-line',
+      title: 'AI 온보딩',
+      description: '기업용 AI 온보딩 솔루션으로 신입사원의 빠른 적응과 성장을 지원하는 지능형 인재 육성 플랫폼을 제공합니다.',
+      features: ['스마트 온보딩', '개인화 교육', '성과 분석'],
+      link: '/onboarding-ai'
     }
   ];
 

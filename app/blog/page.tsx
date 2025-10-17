@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import LetterGlitch from '@/components/letterglitch';
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -122,11 +123,21 @@ export default function BlogPage() {
       <Header />
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-4">
+        <section className="relative py-16 bg-gray-50">
+          <div className="absolute inset-0 opacity-10">
+            <LetterGlitch
+              glitchColors={['#0891b2', '#06b6d4', '#22d3ee']}
+              glitchSpeed={50}
+              centerVignette={false}
+              outerVignette={false}
+              smooth={true}
+              characters="∑∏∆∇∂∫∞≈≠≤≥±×÷√∈∉∪∩⊂⊃∧∨¬→←↑↓⟨⟩‖∥⊥∝λμσπθφψωαβγδεζηικνξοπρστυχ0123456789+-*/"
+            />
+          </div>
+          <div className="container mx-auto px-6 text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl font-normal text-gray-800 mb-4 tracking-tight">
               AI 인사이트 & 
-              <span className="font-normal"> 혁신</span>
+              <span className="font-light"> 혁신</span>
             </h1>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
               인공지능과 기술 분야의 최신 트렌드, 인사이트, 혁신적인 발전 소식을 확인하세요.

@@ -19,8 +19,8 @@ export default function Footer() {
             <div>
               <h4 className="text-gray-800 font-normal mb-4 text-sm">서비스</h4>
               <div className="space-y-3">
-                {['AI RAG', 'AI Education', 'AI K-Medical'].map((item, index) => {
-                  const links = ['/rag-solution', '/ai-education', '/k-medical'];
+                {['AI RAG', 'AI Education', 'AI 온보딩'].map((item, index) => {
+                  const links = ['/rag-solution', '/ai-education', '/onboarding-ai'];
                   return (
                     <Link 
                       key={index}

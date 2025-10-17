@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import LetterGlitch from '@/components/letterglitch';
 
 export default function RAGSolutionPage() {
   const [activeDemo, setActiveDemo] = useState(0);
@@ -91,11 +92,21 @@ export default function RAGSolutionPage() {
           }}
         >
           <div className="absolute inset-0 bg-gray-100/85"></div>
+          <div className="absolute inset-0 opacity-10">
+            <LetterGlitch
+              glitchColors={['#0891b2', '#06b6d4', '#22d3ee']}
+              glitchSpeed={50}
+              centerVignette={false}
+              outerVignette={false}
+              smooth={true}
+              characters="∑∏∆∇∂∫∞≈≠≤≥±×÷√∈∉∪∩⊂⊃∧∨¬→←↑↓⟨⟩‖∥⊥∝λμσπθφψωαβγδεζηικνξοπρστυχ0123456789+-*/"
+            />
+          </div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-normal text-gray-800 mb-6 leading-tight tracking-tight">
                 조직의 지식을 AI RAG 솔루션으로 
-                <span className="font-normal">활용하세요</span>
+                <span className="font-light"> 활용하세요</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed">
                 검색 증강 생성 플랫폼으로 팀이 정보에 접근하고 활용하는 방식을 혁신하세요. 문서, 데이터베이스, 지식 저장소에서 즉시 정확한 답변을 얻으세요.
@@ -107,9 +118,9 @@ export default function RAGSolutionPage() {
                 >
                   시작하기
                 </Link>
-                <button className="bg-gray-100 text-gray-700 px-8 py-4 rounded-2xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] transition-all duration-300 font-normal whitespace-nowrap cursor-pointer">
+                {/* <button className="bg-gray-100 text-gray-700 px-8 py-4 rounded-2xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] transition-all duration-300 font-normal whitespace-nowrap cursor-pointer">
                   데모 보기
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

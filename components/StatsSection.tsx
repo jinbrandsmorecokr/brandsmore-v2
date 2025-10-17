@@ -4,9 +4,9 @@
 export default function StatsSection() {
   const stats = [
     {
-      number: '500+',
-      label: '글로벌 의료 파트너',
-      icon: 'ri-hospital-line'
+      number: '50+',
+      label: '기업 RAG 구축',
+      icon: 'ri-brain-line'
     },
     {
       number: '95%',
@@ -14,14 +14,14 @@ export default function StatsSection() {
       icon: 'ri-star-line'
     },
     {
-      number: '50+',
-      label: '기업 RAG 구축',
-      icon: 'ri-building-line'
-    },
-    {
       number: '1000+',
       label: '임원 교육 완료',
-      icon: 'ri-user-line'
+      icon: 'ri-graduation-cap-line'
+    },
+    {
+      number: '100+',
+      label: 'AI 프로젝트 성공',
+      icon: 'ri-rocket-line'
     }
   ];
 

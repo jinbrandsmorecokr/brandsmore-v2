@@ -5,32 +5,15 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import LetterGlitch from '@/components/letterglitch';
 
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: "김사라",
-      role: "CEO & 공동창립자", 
-      image: "https://readdy.ai/api/search-image?query=Professional%20Korean%20businesswoman%20CEO%20in%20modern%20office%20setting%2C%20confident%20smile%2C%20business%20suit%2C%20clean%20minimal%20background%2C%20professional%20headshot%20style%2C%20soft%20lighting&width=300&height=300&seq=about_ceo_1&orientation=squarish",
-      bio: "AI 및 기업 솔루션 분야 15년 이상의 경험"
-    },
-    {
-      name: "박데이비드",
-      role: "CTO & 공동창립자",
-      image: "https://readdy.ai/api/search-image?query=Professional%20Korean%20tech%20executive%20CTO%20in%20modern%20office%2C%20friendly%20expression%2C%20business%20casual%20attire%2C%20clean%20minimal%20background%2C%20professional%20headshot%20style%2C%20soft%20lighting&width=300&height=300&seq=about_cto_1&orientation=squarish",
-      bio: "머신러닝 박사 학위를 보유한 전 구글 AI 연구원"
-    },
-    {
-      name: "에밀리 첸",
-      role: "AI 연구 책임자",
-      image: "https://readdy.ai/api/search-image?query=Professional%20Asian%20female%20AI%20researcher%20in%20modern%20lab%20setting%2C%20confident%20smile%2C%20smart%20casual%20attire%2C%20clean%20minimal%20background%2C%20professional%20headshot%20style%2C%20soft%20lighting&width=300&height=300&seq=about_research_1&orientation=squarish",
-      bio: "자연어 처리 및 RAG 시스템 분야의 선도적 전문가"
-    },
-    {
-      name: "이마이클",
-      role: "제품 책임자",
-      image: "https://readdy.ai/api/search-image?query=Professional%20Korean%20male%20product%20manager%20in%20modern%20office%2C%20approachable%20smile%2C%20business%20casual%20shirt%2C%20clean%20minimal%20background%2C%20professional%20headshot%20style%2C%20soft%20lighting&width=300&height=300&seq=about_product_1&orientation=squarish",
-      bio: "AI 기반 솔루션에 중점을 둔 제품 전략 전문가"
+      name: "김성진",
+      role: "CEO & Founder", 
+      image: "/images/jin.jpg",
+      bio: "AI 및 기업 솔루션 분야의 혁신적인 리더십을 발휘하는 창립자"
     }
   ];
 
@@ -69,11 +52,22 @@ export default function AboutPage() {
           }}
         >
           <div className="absolute inset-0 bg-gray-100/80"></div>
+          {/* LetterGlitch Background Effect */}
+          <div className="absolute inset-0 opacity-10">
+            <LetterGlitch
+              glitchColors={['#0891b2', '#06b6d4', '#22d3ee']}
+              glitchSpeed={50}
+              centerVignette={false}
+              outerVignette={false}
+              smooth={true}
+              characters="∑∏∆∇∂∫∞≈≠≤≥±×÷√∈∉∪∩⊂⊃∧∨¬→←↑↓⟨⟩‖∥⊥∝∴∵∀∃λμσπθφψωαβγδεζηικνξοπρστυχ0123456789.,-+="
+            />
+          </div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-normal text-gray-800 mb-6 leading-tight tracking-tight">
                 실전형 AI 파트너로 
-                <span className="font-normal">혁신을 현실로</span>
+                <span className="font-light"> 혁신을 현실로</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed">
                 브랜즈모어(Brandsmore)는 &quot;누구나 쉽게, 실제 업무에 바로 쓸 수 있는 AI&quot;를 만들겠다는 목표 아래, 현장 중심의 RAG 기반 지식검색 시스템과 개인 맞춤형 추천 플랫폼을 자체 개발·상용화하고 있습니다.
@@ -107,7 +101,7 @@ export default function AboutPage() {
                     브랜즈모어(Brandsmore)는 2024년 설립된 AI 스타트업입니다.
                   </p>
                   <p>
-                    최근에는 로컬 LLM과 벡터DB를 활용한 엔터프라이즈 RAG 솔루션, 상장기업 임원 대상 1:1 AI 실전 교육 프로그램, AI에이전트 기반 K-Medical 서비스 개발 등, 기술력과 시장의 수요가 만나는 새로운 비즈니스도 확장하고 있습니다.
+                    최근에는 로컬 LLM과 벡터DB를 활용한 엔터프라이즈 RAG 솔루션, 상장기업 임원 대상 1:1 AI 실전 교육 프로그램, AI 기반 기업용 온보딩 솔루션 개발 등, 기술력과 시장의 수요가 만나는 새로운 비즈니스도 확장하고 있습니다.
                   </p>
                   <p>
                     브랜즈모어는 벤처기업 인증, 기술보증기금 IP기술보증 등 공식 인증과 실제 고객사 PoC/현장 적용 경험을 바탕으로, &quot;실제로 쓰이는 AI, 문제 해결에 집중하는 AI&quot;를 추구합니다.
@@ -162,9 +156,9 @@ export default function AboutPage() {
                 다양한 전문가로 구성된 우리 팀은 깊은 기술적 지식과 실제 비즈니스 경험을 결합합니다.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex justify-center">
               {teamMembers.map((member, index) => (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center max-w-xs">
                   <div className="bg-gray-100 rounded-3xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] p-6 hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
                     <div className="w-24 h-24 mx-auto mb-4 bg-gray-100 rounded-full shadow-[inset_3px_3px_6px_rgba(0,0,0,0.1),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] overflow-hidden">
                       <Image 

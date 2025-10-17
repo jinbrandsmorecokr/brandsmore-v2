@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import LetterGlitch from '@/components/letterglitch';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ export default function ContactPage() {
   const services = [
     { value: 'ai-rag', label: 'AI RAG 솔루션' },
     { value: 'ai-education', label: 'AI 교육 플랫폼' },
-    { value: 'k-medical', label: 'K-메디컬 AI' },
+    { value: 'onboarding-ai', label: 'AI 온보딩' },
     { value: 'consultation', label: 'AI 컨설팅' },
     { value: 'custom', label: '맞춤형 AI 개발' },
     { value: 'other', label: '기타' }
@@ -37,35 +38,23 @@ export default function ContactPage() {
     {
       icon: 'ri-mail-line',
       title: '이메일',
-      details: ['jin@brandsmore.co.kr', 'support@brandsmore.co.kr'],
+      details: ['jin@brandsmore.co.kr'],
       link: 'mailto:jin@brandsmore.co.kr'
     },
     {
       icon: 'ri-phone-line',
       title: '전화',
-      details: ['+82 2-1234-5678', '+82 10-9876-5432'],
-      link: 'tel:+82-2-1234-5678'
+      details: ['+82 10-8373-3720'],
+      link: 'tel:+82-2-8373-3720'
     }
   ];
 
   const teamMembers = [
     {
-      name: "김사라",
-      role: "CEO & 공동창업자",
-      email: "sarah.kim@brandsmore.co.kr",
-      image: "https://readdy.ai/api/search-image?query=Professional%20Korean%20businesswoman%20CEO%20in%20modern%20office%2C%20confident%20and%20approachable%2C%20business%20attire%2C%20professional%20headshot%20for%20contact%20page&width=200&height=200&seq=contact_ceo_1&orientation=squarish"
-    },
-    {
-      name: "박데이비드",
-      role: "CTO & 공동창업자",
-      email: "david.park@brandsmore.co.kr",
-      image: "https://readdy.ai/api/search-image?query=Professional%20Korean%20tech%20executive%20CTO%2C%20friendly%20and%20technical%20expertise%2C%20business%20casual%2C%20professional%20headshot%20for%20contact%20page&width=200&height=200&seq=contact_cto_1&orientation=squarish"
-    },
-    {
-      name: "첸에밀리",
-      role: "영업 책임자",
-      email: "emily.chen@brandsmore.co.kr",
-      image: "https://readdy.ai/api/search-image?query=Professional%20Asian%20female%20sales%20executive%2C%20warm%20and%20welcoming%20expression%2C%20business%20attire%2C%20professional%20headshot%20for%20contact%20page&width=200&height=200&seq=contact_sales_1&orientation=squarish"
+      name: "김성진",
+      role: "CEO & Founder",
+      email: "jin@brandsmore.co.kr",
+      image: "/images/jin.jpg"
     }
   ];
 
@@ -100,11 +89,21 @@ export default function ContactPage() {
       <Header />
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl md:text-5xl font-light text-gray-800 mb-4">
+        <section className="relative py-16 bg-gray-50">
+          <div className="absolute inset-0 opacity-15">
+            <LetterGlitch
+              glitchColors={['#0891b2', '#06b6d4', '#22d3ee']}
+              glitchSpeed={50}
+              centerVignette={false}
+              outerVignette={false}
+              smooth={true}
+              characters="∑∏∆∇∂∫∞≈≠≤≥±×÷√∈∉∪∩⊂⊃∧∨¬→←↑↓⟨⟩‖∥⊥∝λμσπθφψωαβγδεζηικνξοπρστυχ0123456789+-*/"
+            />
+          </div>
+          <div className="container mx-auto px-6 text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl font-normal text-gray-800 mb-4 tracking-tight">
               문의 
-              <span className="font-normal"> 하기</span>
+              <span className="font-light"> 하기</span>
             </h1>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
               AI로 비즈니스를 혁신할 준비가 되셨나요? 우리의 혁신적인 솔루션이 어떻게 목표 달성에 도움이 될 수 있는지 논의해보세요.
@@ -273,9 +272,9 @@ export default function ContactPage() {
                 Brandsmore의 혁신적인 AI 솔루션을 만드는 전문가들을 소개합니다.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex justify-center">
               {teamMembers.map((member, index) => (
-                <div key={index} className="text-center bg-gray-100 rounded-2xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] p-6 hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300">
+                <div key={index} className="text-center bg-gray-100 rounded-2xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] p-6 hover:shadow-[inset_2px_2px_4px_rgba(0,0,0,0.1),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] transition-all duration-300 max-w-xs">
                   <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full shadow-[inset_3px_3px_6px_rgba(0,0,0,0.1),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] overflow-hidden">
                     <Image 
                       src={member.image}
@@ -310,7 +309,7 @@ export default function ContactPage() {
             </div>
             <div className="bg-gray-100 rounded-3xl shadow-[4px_4px_8px_rgba(0,0,0,0.1),-4px_-4px_8px_rgba(255,255,255,0.8)] overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0145935374234!2d127.0276316!3d37.4979462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1575e622d51%3A0x9b8a9e0a1d5c9a5e!2sGangnam-gu%2C%20Seoul%2C%20South%20Korea!5e0!3m2!1sen!2skr!4v1642000000000!5m2!1sen!2skr"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dO4Xz4PiPiXlQ0&q=경기도+군포시+군포첨단산업2로22번길+5+부곡동"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
